@@ -6,8 +6,7 @@ import br.com.fiap.entidade.Produto;
 
 public interface IRepositorioProduto {
 	
-	
-	
+		
 	public boolean cadastrar(Produto produto);
 	
 	public boolean atualizar(Produto produto);

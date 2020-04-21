@@ -3,15 +3,16 @@ package br.com.fiap.entidade;
 public class Produto {
 	
 	private int codigo;
+	private String nome;
 	private String descricao;
 	private double valor;
 	
-	
 	public Produto() {
-		super();
+	
 	}
-	public Produto(int codigo, String descricao, double valor) {
+	public Produto(int codigo, String nome, String descricao, double valor) {
 		this.codigo = codigo;
+		this.nome = nome;
 		this.descricao = descricao;
 		this.valor = valor;
 	}
@@ -20,6 +21,12 @@ public class Produto {
 	}
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public String getDescricao() {
 		return descricao;
@@ -33,10 +40,10 @@ public class Produto {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
-	
-	
-	
-	
 
+	
+	
+	
+	
+	
 }
